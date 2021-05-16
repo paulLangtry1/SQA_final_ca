@@ -13,13 +13,9 @@ As part of a Software Quality management plan for an organisation you have been 
 While reviewing code made by you or your colleagues there are generally a few questions you can ask yourself about the code.
 
 | Task | Sprint  | Points  | Estimate | Priority 
-|:-------------|:---------------:|---------------:|---------------:|
-| Second cell  | Third cell      | fourth cell    |  fourth cell    |
-| foo          | **strong**      | baz            | baz            
-| quux         | baz             | bar            | bar            
-|              |                 |                |                
-||              |                 |               |                
-|-----------------+--------------+-----------------+----------------|
-|              |                 | Foo            | Foo            
-{: .custom-class #custom-id}
 
+
+| Task        | Sprint      | Points        | Estimate    | Priority     |
+| :---        |    :----:   |          ---: |         ---:|Here's this   |
+| Header      | Title       | Here's this   |Here's this  |Here's this   |
+| Paragraph   | Text        | And more      |Here's this  |Here's this   |
