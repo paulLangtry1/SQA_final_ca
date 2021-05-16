@@ -12,15 +12,14 @@ As part of a Software Quality management plan for an organisation you have been 
 ## Sprint Backlog & Task Estimation ##
 While reviewing code made by you or your colleagues there are generally a few questions you can ask yourself about the code.
 
-| Sprint | Left aligned | Center aligned  | Right aligned  |
-|--------|:-------------|:---------------:|---------------:|
-|    1   | Second cell  | Third cell      | fourth cell    |
-| Second | foo          | **strong**      | baz            |
-| Third  | quux         | baz             | bar            |
+| Sprint | Center aligned  | Right aligned  |
+|:-------------|:---------------:|---------------:|
+| Second cell  | Third cell      | fourth cell    |
+| foo          | **strong**      | baz            |
+| quux         | baz             | bar            |
+|              |                 |                |
+||              |                 |                |
 |-----------------+--------------+-----------------+----------------|
-| Second |              |                 |                |
-| 2nd lin|              |                 |                |
-|-----------------+--------------+-----------------+----------------|
-| Third b|              |                 | Foo            |
+|              |                 | Foo            |
 {: .custom-class #custom-id}
 
