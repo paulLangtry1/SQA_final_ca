@@ -12,7 +12,7 @@ As part of a Software Quality management plan for an organisation you have been 
 ## Sprint Backlog & Task Estimation ##
 While reviewing code made by you or your colleagues there are generally a few questions you can ask yourself about the code.
 
-| Task | Sprint  | Points  | Estimate | Priority | Priority | Priority 
+| Task | Sprint  | Points  | Estimate | Priority 
 |:-------------|:---------------:|---------------:|---------------:|
 | Second cell  | Third cell      | fourth cell    |  fourth cell    |
 | foo          | **strong**      | baz            | baz            
