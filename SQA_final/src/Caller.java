@@ -26,11 +26,13 @@ public class Caller
 		return rubrics;
 	}
 
-	public Rubric getSpecificRubric(String title) 
+	public Rubric getSpecificRubric(String title) //get rubric by title (name)
 	{
 
-		for (Rubric rubric : rubrics) {
-			if (rubric.getTitle().equalsIgnoreCase(title)) {
+		for (Rubric rubric : rubrics)
+		{
+			if (rubric.getTitle().equalsIgnoreCase(title)) 
+			{
 				return rubric;
 			}
 		}
