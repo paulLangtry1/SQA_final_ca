@@ -16,4 +16,4 @@ While reviewing code made by you or your colleagues there are generally a few qu
 | Task        | Sprint      | Points        | Estimate    | Priority  |  Developer  | 
 | :---        |    :----:   |          ---: |         ---:|       ---:|      ---:|
 | Create Code Review Documentation  | 1      | 1         | 30 mins |High |Paul|
-| Paragraph   | Text        | And more      |Here's this  |Here's this|Here's this|
+| Create Necessary Classes   |  1        | 1     | 30 min  |High | Paul|
