@@ -25,11 +25,18 @@ Sprints are a great way to plan out tasks and assign them to developers. Estimat
 ## Estimate Justification & Velocity Metric ##
 ## Fibonacci Scale ##
 I used the **Fibonacci Scale** in order to measure my estimates during this **Sprint Backlog**. The Fibonacci Scale is measured by the *sum of the preceding two numbers*, e.g 0, 1, 2, 3, 5, 8, 13 etc. I chose this method as I used it during my internship with DEASP and I liked the concept. A score of 13 would indicate a very complex task that could take **weeks** to complete.
+
+<p align="left">
+  <img src="https://i.gyazo.com/806f475ae850102b494c1950deae6e0f.png"
+        alt="Fibonacci Scale" width="500"/>
+</p>
+
+
 ## Sprint 1 ##
 In Sprint 1 I am assigning tasks that need to be completed in order to move on and **start the next sprint**. These **tasks** are necessary to move forward with the project so their priotiy is **High**. I have only assigned 1 from the **Fibonacci Scale** as it takes less than a hour to complete each task. **Sprint 1** has a total velocity of 2, resulting from adding the two estimates together.
 
 ## Sprint 2 ##
-In **Sprint 2** the *core functionality* of the application has to be implemented. These features include **Test-Driven Development** which add to the complexity and have been assigned an estimate of 3 each coming to a **total velocity** of **6** for these tasks.
+In **Sprint 2** the *core functionality* of the application has to be implemented. These features include **Test-Driven Development** which add to the complexity and have been assigned an estimate of 3 each, coming to a **total velocity** of **6** for these tasks.
 
 ## Sprint 3 ##
-In **Sprint 3** the final features are being added which include calculations. The code completed during *Sprint 2* also needs to be tested and checked using the test coverage tool which adds to the time taken. The **total velocity** comes to **10** for sprint 3.
+In **Sprint 3** the final features are being added which include calculations. The code completed during *Sprint 2* also needs to be tested and checked using the test coverage tool which adds to the time taken. Necessary documentation also needs to be completed in relation to the testing. The **total velocity** comes to **10** for sprint 3.
