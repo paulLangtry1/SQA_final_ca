@@ -40,3 +40,6 @@ In **Sprint 2** the *core functionality* of the application has to be implemente
 
 ## Sprint 3 ##
 In **Sprint 3** the final features are being added which include calculations. The code completed during *Sprint 2* also needs to be tested and checked using the test coverage tool which adds to the time taken. Necessary documentation also needs to be completed in relation to the testing. The **total velocity** comes to **10** for sprint 3.
+
+## Test Driven Development ##
+I have been using a Test Driven Development approach to coding each method so far. I am benefitting from testing my methods as soon as I cerate them and I find it makes everything clear and easier to keep track of if anything starts failing. I have linked an example to my TDD approach <a href="https://github.com/paulLangtry1/SQA_final_ca/blob/rubric-features/SQA_final/src/UnitTests.java">here</a>.</br> It can be seen that I'm using this approach from the start. If the getAllRubrics is empty the test will fail. If the title or criteria does not match the tests will fail. The example linked will pass as the values are matching.
