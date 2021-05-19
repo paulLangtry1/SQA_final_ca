@@ -16,4 +16,5 @@ While reviewing code made by you or your colleagues there are generally a few qu
 | Task        | Sprint      | Points        | Estimate    | Priority  |  Developer  | 
 | :---        |    :----:   |          ---: |         ---:|       ---:|      ---:|
 | Create Code Review Documentation  | 1      | 1         | 30 mins |High |Paul|
-| Create Necessary Classes   |  1        | 1     | 30 min  |High | Paul|
+| Create Necessary Classes   |  1        | 1     | 30 mins  |High | Paul|
+| Features for create a new rubric, add a criterion to a Rubric, get list of Rubrics, get a specific Rubric by name   |  2        |   5   | 2h  |High | Paul|
