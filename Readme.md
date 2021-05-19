@@ -20,5 +20,4 @@ Sprints are a great way to plan out tasks and assign them to developers. Estimat
 | Features for create a new Rubric, add a criterion to a Rubric, get list of Rubrics, get a specific Rubric by name. Include TDD.  |  2        |   5   | 2h  |High | Paul| Uncompleted|
 | Features for creating a new StudentGrade, adding a score for a particular criterion for a grade and getting all StudentGrades associated with a specific Rubric. Include TDD.  |  2        | 5    | 2h |High | Paul| Uncompleted|
 | Features to provide summary calculations across all graded students, including average, standard deviation, minimum and maximum score for a specific criterion of a Rubric   |  3        | 8     | 3h  |High | Paul|
-|    |  1        | 1     | 30 mins  |High | Paul| Uncompleted|
 | Select test coverage tool and create documentation. Identify any issues with the code and make changes.  |  3        | 8     | 3h |High | Paul| Uncompleted|
