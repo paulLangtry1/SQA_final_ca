@@ -18,7 +18,7 @@ Sprints are a great way to plan out tasks and assign them to developers. Estimat
 | Create Code Review Documentation  | 1      | 1         | 30 mins |High |Paul| Completed|
 | Create Necessary Classes   |  1        | 1     | 30 mins  |High | Paul| Completed|
 | Features for create a new Rubric, add a criterion to a Rubric, get list of Rubrics, get a specific Rubric by name. Include TDD.  |  2        |   3   | 2h  |High | Paul| Completed|
-| Features for creating a new StudentGrade, adding a score for a particular criterion for a grade and getting all StudentGrades associated with a specific Rubric. Include TDD.  |  2        | 3    | 2h |High | Paul| Uncompleted|
+| Features for creating a new StudentGrade, adding a score for a particular criterion for a grade and getting all StudentGrades associated with a specific Rubric. Include TDD.  |  2        | 3    | 2h |High | Paul| Completed|
 | Features to provide summary calculations across all graded students, including average, standard deviation, minimum and maximum score for a specific criterion of a Rubric   |  3        | 5     | 3h  |High | Paul| Uncompleted|
 | Select test coverage tool and create documentation. Identify any issues with the code and make changes.  |  3        | 5     | 3h |High | Paul| Uncompleted|
 
@@ -43,3 +43,13 @@ In **Sprint 3** the final features are being added which include calculations. T
 
 ## Test Driven Development ##
 I have been using a Test Driven Development approach to coding each method so far. I am benefitting from testing my methods as soon as I cerate them and I find it makes everything clear and easier to keep track of if anything starts failing. I have linked an example to my TDD approach <a href="https://github.com/paulLangtry1/SQA_final_ca/blob/rubric-features/SQA_final/src/UnitTests.java">here</a>.</br> It can be seen that I'm using this approach from the start. If the getAllRubrics is empty the test will fail. If the title or criteria does not match the tests will fail. The example linked will pass as the values are matching.
+
+## Code Review Checklist ##
+It is important for a team to **check** each others code during sprints. When a member of a team creates a pull request they should assign at least two other members to review their code before a pull request is approved and merged. I have written a few guidelines to follow when reviewing the code below.
+1. Is the code written following the coding standards and guidelines?
+2. Am I able to understand the code easily?
+3. Can I unit test/ debug the code easily to find the root cause?
+4. Is the same code duplicated more than twice?
+5. Is this function or class too large? If the answer is yes, is the function or class doing too many things?
+
+An example of my work conveying these methods can be seen <a href="https://github.com/paulLangtry1/SQA_final_ca/pull/6">here</a>.</br>
