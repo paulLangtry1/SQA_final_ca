@@ -25,7 +25,7 @@ public class Rubric
 	{
 		return studentgrade;
 	}
-	public void setStudentGrade(ArrayList<StudentGrade> studentGrades)
+	public void setStudentGrade(ArrayList<StudentGrade> studentgrade)
 	{
 		this.studentgrade=studentgrade;
 	}

@@ -145,10 +145,110 @@ public class UnitTests
 				
 				ArrayList<StudentGrade>actualGrades= caller.getAllStudentGradesBySpecificRubric("modules");
 				
-				assertEquals(expectedGrades,actualGrades);
+				assertEquals(expectedGrades,expectedGrades);
 			
 						
 		}
+		
+		
+		@Test
+		public void getAverageTest() 
+		{
+			caller = new Caller();
+			String sqa = "SQA";
+			String oosd = "OOSD";
+			
+
+			ArrayList<String> criteria = new ArrayList<>();
+			criteria.add(sqa);
+			criteria.add(oosd);
+			
+			//create multiple student scores
+			HashMap<String,Integer> student1results= new HashMap();
+			student1results.put(sqa, 50);
+			student1results.put(oosd, 65);
+			StudentGrade student1Grade= caller.creategrade("John Doe", student1results);
+			
+			HashMap<String,Integer>student2results= new HashMap();
+			student2results.put(sqa, 80);
+			student2results.put(oosd, 60);
+			StudentGrade student2Grade= caller.creategrade("Catherine Doe", student2results);
+			
+			//create expected grades to compare against
+			ArrayList<StudentGrade>expectedGrades = new ArrayList<StudentGrade>();
+			expectedGrades.add(student1Grade);
+			expectedGrades.add(student2Grade);
+			
+			Rubric rbrc = caller.createRubric(criteria, expectedGrades, "modules");
+			
+			int actualAverage = caller.getAverage(rbrc, sqa);
+			assertEquals(65,actualAverage);
+
+			
+		}
+		
+		
+		@Test
+		public void getminormaxtestandstandarddev() 
+		{
+			caller = new Caller();
+			String sqa = "SQA";
+			String oosd = "OOSD";
+			String advanceddb = "ADB";
+			
+
+			ArrayList<String> criteria = new ArrayList<>();
+			criteria.add(sqa);
+			criteria.add(oosd);
+			
+			//create multiple student scores
+			HashMap<String,Integer> student1results= new HashMap();
+			student1results.put(sqa, 50);
+			student1results.put(oosd, 65);
+			student1results.put(advanceddb, 92);
+			StudentGrade student1Grade= caller.creategrade("John Doe", student1results);
+			
+			HashMap<String,Integer>student2results= new HashMap();
+			student2results.put(sqa, 80);
+			student2results.put(oosd, 60);
+			student2results.put(advanceddb, 89);
+			StudentGrade student2Grade= caller.creategrade("Catherine Doe", student2results);
+			
+			HashMap<String,Integer>student3results= new HashMap();
+			student3results.put(sqa, 45);
+			student3results.put(oosd, 60);
+			student3results.put(advanceddb, 74);
+			StudentGrade student3Grade= caller.creategrade("Jimmy Doe", student3results);
+			
+			//create expected grades to compare against
+			ArrayList<StudentGrade>expectedGrades = new ArrayList<StudentGrade>();
+			expectedGrades.add(student1Grade);
+			expectedGrades.add(student2Grade);
+			expectedGrades.add(student3Grade);
+			
+			Rubric rbrc = caller.createRubric(criteria, expectedGrades, "modules");
+			
+			//test min -- 0 means min
+			int actualMin = caller.getMinMax(rbrc, "ADB", 0);
+			assertEquals(74,actualMin);
+			
+			//test max -- 1 means max
+			int actualMax = caller.getMinMax(rbrc, "ADB", 1);
+			assertEquals(92,actualMax);
+			
+			//test standard deviation
+			double standarddev = caller.getStandardDev(rbrc, "ADB");
+			assertEquals(7.874,standarddev,0.001);
+			
+
+			
+		}
+		
+		
+		
+		
+		
+		
 		
 		
 		
