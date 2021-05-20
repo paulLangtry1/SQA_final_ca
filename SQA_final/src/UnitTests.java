@@ -93,7 +93,7 @@ public class UnitTests
 	    }
 		
 		
-		//Test Student Grade creation adding grade for criterion
+		//Test StudentGrade creation
 		@Test
 		public void createStudentGradetest() 
 		{
@@ -110,6 +110,49 @@ public class UnitTests
 			assertEquals(Studentresult,studentGrade.getGrade());
 					
 		}
+		
+		@Test
+		public void getGradebyRubrictest() 
+		{
+			
+				caller = new Caller();
+				String sqa = "SQA";
+				String oosd = "OOSD";
+				
+	
+				ArrayList<String> criteria = new ArrayList<>();
+				criteria.add(sqa);
+				criteria.add(oosd);
+				
+				//create multiple student scores
+				HashMap<String,Integer> student1results= new HashMap();
+				student1results.put(sqa, 50);
+				student1results.put(oosd, 65);
+				StudentGrade student1Grade= caller.creategrade("John Doe", student1results);
+				
+				HashMap<String,Integer>student2results= new HashMap();
+				student2results.put(sqa, 80);
+				student2results.put(oosd, 60);
+				StudentGrade student2Grade= caller.creategrade("Catherine Doe", student2results);
+				
+				//create expected grades to compare against
+				ArrayList<StudentGrade>expectedGrades = new ArrayList<StudentGrade>();
+				expectedGrades.add(student1Grade);
+				expectedGrades.add(student2Grade);
+
+				
+				caller.createRubric(criteria,expectedGrades,"modules");
+				
+				ArrayList<StudentGrade>actualGrades= caller.getAllStudentGradesBySpecificRubric("modules");
+				
+				assertEquals(expectedGrades,actualGrades);
+			
+						
+		}
+		
+		
+		
+		
 		
 		
 		

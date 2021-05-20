@@ -37,6 +37,11 @@ public class Caller
 	{
 		return rubrics;
 	}
+	public ArrayList<StudentGrade> getAllStudentGrades() 
+	{
+		return studentGrades;
+	}
+	
 
 	public Rubric getSpecificRubric(String title) //get rubric by title (name)
 	{
@@ -49,5 +54,22 @@ public class Caller
 			}
 		}
 		return null;
+	}
+	
+	public ArrayList<StudentGrade>getAllStudentGradesBySpecificRubric(String title) //getting all grades with the matching specfic rubric
+	{
+		
+		ArrayList<StudentGrade>specificRubric = new ArrayList<StudentGrade>();
+		
+		for(Rubric rubric : rubrics) {
+			if(rubric.getTitle().equalsIgnoreCase(title)) 
+			{
+				for(StudentGrade grade: rubric.getStudentGrade()) 
+				{
+					specificRubric.add(grade);
+				}
+			}
+		}
+		return specificRubric;
 	}
 }
