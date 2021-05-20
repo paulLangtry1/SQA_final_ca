@@ -72,4 +72,20 @@ public class Caller
 		}
 		return specificRubric;
 	}
+	
+	public int getAverage(Rubric rubric, String criterion) {
+		
+		 int total =0;
+		for(StudentGrade grade :rubric.getStudentGrade()) 
+		{
+			total = total+grade.getGrade().get(criterion);
+		}
+		int totalgrades = rubric.getStudentGrade().size();
+		int average = (total/totalgrades);
+
+		return average;
+	}
+	
+
+	
 }
