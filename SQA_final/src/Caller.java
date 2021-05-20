@@ -111,6 +111,23 @@ public class Caller
 			}
 			return result;
 	}
+	public double getStandardDev(Rubric rubric,String criterion) //to calc standard dev workout out mean, each number subtract mean and square the result, 
+																//the get mean of sqrd differences, then minus the sqr root
+	{
+		
+		int average = getAverage( rubric, criterion);//mean
+		double standarddev = 0.0;
+		
+		int result=0;
+		for(int i=0; i<rubric.getStudentGrade().size();i++) 
+		{
+			standarddev += Math.pow(rubric.getStudentGrade().get(i).getGrade().get(criterion)-average, 2);
+		}
+		
+	
+		return Math.sqrt(standarddev/rubric.getStudentGrade().size());
+	}
+	
 	
 
 	

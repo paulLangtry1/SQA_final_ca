@@ -189,7 +189,7 @@ public class UnitTests
 		
 		
 		@Test
-		public void getminormaxtest() 
+		public void getminormaxtestandstandarddev() 
 		{
 			caller = new Caller();
 			String sqa = "SQA";
@@ -228,13 +228,17 @@ public class UnitTests
 			
 			Rubric rbrc = caller.createRubric(criteria, expectedGrades, "modules");
 			
-			//Test min
+			//test min -- 0 means min
 			int actualMin = caller.getMinMax(rbrc, "ADB", 0);
 			assertEquals(74,actualMin);
 			
-			//Test max
+			//test max -- 1 means max
 			int actualMax = caller.getMinMax(rbrc, "ADB", 1);
 			assertEquals(92,actualMax);
+			
+			//test standard deviation
+			double standarddev = caller.getStandardDev(rbrc, "ADB");
+			assertEquals(7.874,standarddev,0.001);
 			
 
 			
