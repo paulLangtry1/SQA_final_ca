@@ -5,7 +5,7 @@ public class StudentGrade
 	String Studentname;
 	HashMap<String,Integer> grade = new HashMap();
 	
-	public StudentGrade(String studentName, HashMap<String, Integer> studentScore) 
+	public StudentGrade(String studentName, HashMap<String, Integer> grade) 
 	{
 		super();
 		this.Studentname = studentName;
