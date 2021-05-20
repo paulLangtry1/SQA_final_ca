@@ -35,19 +35,19 @@ I used the **Fibonacci Scale** in order to measure my estimates during this **Sp
 ## Sprint 1 ##
 In Sprint 1 I am assigning tasks that need to be completed in order to move on and **start the next sprint**. These **tasks** are necessary to move forward with the project so their priority is **High**. I have only assigned 1 from the **Fibonacci Scale** as it takes less than a hour to complete each task. **Sprint 1** has a total velocity of 2, resulting from adding the two estimates together.
 
-**Looking Back**
+### Looking Back ###
 Sprint 1 went smoothly and the time estimations were accurate.
 
 ## Sprint 2 ##
 In **Sprint 2** the *core functionality* of the application has to be implemented. These features include **Test-Driven Development** which add to the complexity and have been assigned an estimate of 3 each, coming to a **total velocity** of **6** for these tasks.
 
-**Looking Back**
+### Looking Back ###
 Sprint 2 went smoothly and the time estimations were accurate. The *test driven development* approach worked nicely and it can be seen from my commits that I did it by a method by method approach.
 
 ## Sprint 3 ##
 In **Sprint 3** the final features are being added which include calculations. The code completed during *Sprint 2* also needs to be tested and checked using the test coverage tool which adds to the time taken. Necessary documentation also needs to be completed in relation to the testing. The **total velocity** comes to **10** for sprint 3.
 
-**Looking Back**
+### Looking Back ###
 Sprint 3 took a little longer than expected due to some technical diffulties on my end. I eventually figured out the issue but lost an extra few hours trying to sort the issue. I would say the estimation was accurate because although I lost a few hours on the first part of the sprint, the final part of the sprint was straight forward.
 
 ## Test Driven Development ##
@@ -75,7 +75,7 @@ I decided to go with *EclEmma Java Code Coverage* tool as I already had it insta
 <p align="left">
   <img src="https://i.gyazo.com/03be2ec53070fc901fb6bcc6fafa7327.png"
         alt="Test Coverage" width="500"/>
-</p>.</br>
+</p></br>
 As can be seen from my first run I've achieved a very high test coverage score of over **97%**.
 
 There a visibly no gaps in the unit tests from what I can see only untested code in the object classes for the setters as seen below.
@@ -83,7 +83,7 @@ There a visibly no gaps in the unit tests from what I can see only untested code
 <p align="left">
   <img src="https://i.gyazo.com/45236cbf3e34f6d347370c25836343ba.png"
         alt="Test Coverage" width="500"/>
-</p>.</br>
+</p></br>
 
 After identifying these gaps I can see how I would achieve 100% code coverage in this situation but it's not needed as it's a setter and does not need a unit test.
 
