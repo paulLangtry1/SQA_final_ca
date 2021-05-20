@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 
 public class Caller 
@@ -84,6 +85,31 @@ public class Caller
 		int average = (total/totalgrades);
 
 		return average;
+	}
+	
+	public int getMinMax(Rubric rubric,String criterion,int selection) 
+	{
+		 ArrayList<Integer>resultslist = new ArrayList<Integer>();
+			int result=0;
+
+			for(StudentGrade grade :rubric.getStudentGrade()) 
+			{
+				resultslist.add(grade.getGrade().get(criterion));
+			}
+			
+			Collections.sort(resultslist); // I used collections sort as it is the easiest way to sort a list
+			
+			
+			if(selection==0) 
+			{
+				result = resultslist.get(0);
+			}
+			else if(selection==1)
+			{
+				int max = resultslist.get(resultslist.size()-1);
+				result = max;
+			}
+			return result;
 	}
 	
 
