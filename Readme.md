@@ -76,7 +76,7 @@ I decided to go with *EclEmma Java Code Coverage* tool as I already had it insta
   <img src="https://i.gyazo.com/03be2ec53070fc901fb6bcc6fafa7327.png"
         alt="Test Coverage" width="500"/>
 </p></br>
-As can be seen from my first run I've achieved a very high test coverage score of over **97%**.
+As can be seen from my first run I've achieved a very high test coverage score of over 97%.
 
 There a visibly no gaps in the unit tests from what I can see only untested code in the object classes for the setters as seen below.
 
