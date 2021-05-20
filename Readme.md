@@ -19,7 +19,7 @@ Sprints are a great way to plan out tasks and assign them to developers. Estimat
 | Create Necessary Classes   |  1        | 1     | 30 mins  |High | Paul| Completed|
 | Features for create a new Rubric, add a criterion to a Rubric, get list of Rubrics, get a specific Rubric by name. Include TDD.  |  2        |   3   | 2h  |High | Paul| Completed|
 | Features for creating a new StudentGrade, adding a score for a particular criterion for a grade and getting all StudentGrades associated with a specific Rubric. Include TDD.  |  2        | 3    | 2h |High | Paul| Completed|
-| Features to provide summary calculations across all graded students, including average, standard deviation, minimum and maximum score for a specific criterion of a Rubric   |  3        | 5     | 3h  |High | Paul| Uncompleted|
+| Features to provide summary calculations across all graded students, including average, standard deviation, minimum and maximum score for a specific criterion of a Rubric   |  3        | 5     | 3h  |High | Paul| Completed|
 | Select test coverage tool and create documentation. Identify any issues with the code and make changes.  |  3        | 5     | 3h |High | Paul| Uncompleted|
 
 ## Estimate Justification & Velocity Metric ##
@@ -51,5 +51,10 @@ It is important for a team to **check** each others code during sprints. When a 
 3. Can I unit test/ debug the code easily to find the root cause?
 4. Is the same code duplicated more than twice?
 5. Is this function or class too large? If the answer is yes, is the function or class doing too many things?
+<p align="left">
+  <img src="https://i.gyazo.com/c9bb62dbd2d8e4f941b4763792b0232f.png"
+        alt="Code Review Checklist" width="500"/>
+</p>
 
 An example of my work conveying these methods can be seen <a href="https://github.com/paulLangtry1/SQA_final_ca/pull/6">here</a>.</br>
+
