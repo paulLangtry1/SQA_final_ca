@@ -20,7 +20,7 @@ Sprints are a great way to plan out tasks and assign them to developers. Estimat
 | Features for create a new Rubric, add a criterion to a Rubric, get list of Rubrics, get a specific Rubric by name. Include TDD.  |  2        |   3   | 2h  |High | Paul| Completed|
 | Features for creating a new StudentGrade, adding a score for a particular criterion for a grade and getting all StudentGrades associated with a specific Rubric. Include TDD.  |  2        | 3    | 2h |High | Paul| Completed|
 | Features to provide summary calculations across all graded students, including average, standard deviation, minimum and maximum score for a specific criterion of a Rubric   |  3        | 5     | 3h  |High | Paul| Completed|
-| Select test coverage tool and create documentation. Identify any issues with the code and make changes.  |  3        | 5     | 3h |High | Paul| Uncompleted|
+| Select test coverage tool and create documentation. Identify any issues with the code and make changes.  |  3        | 5     | 3h |High | Paul| Completed|
 
 ## Estimate Justification & Velocity Metric ##
 ## Fibonacci Scale ##
@@ -57,4 +57,37 @@ It is important for a team to **check** each others code during sprints. When a 
 </p>
 
 An example of my work conveying these methods can be seen <a href="https://github.com/paulLangtry1/SQA_final_ca/pull/6">here</a>.</br>
+
+## Code Coverage Tool ##
+
+I decided to go with *EclEmma Java Code Coverage* tool as I already had it installed on my system. Using **Eclipse** it is very easy to locate the tool as you can search *EclEmma Java Code Coverage* tool on the marketplace and from there easily install it. Once installed you can right click your project and down near the bottom you will see *Run As* then selected *JUnit Test*.
+
+**First Run**
+<p align="left">
+  <img src="https://i.gyazo.com/03be2ec53070fc901fb6bcc6fafa7327.png"
+        alt="Test Coverage" width="500"/>
+</p>.</br>
+As Can be seen from my first run I've achieved a very high test coverage score over **97%**.
+
+There a visibly no gaps in the unit tests from what I can see only untested code in the object classes for the setters as seen below.
+
+<p align="left">
+  <img src="https://i.gyazo.com/45236cbf3e34f6d347370c25836343ba.png"
+        alt="Test Coverage" width="500"/>
+</p>.</br>
+
+After identifying these gaps I can see how I would achieve 100& code coverage in this situation but it's not need as it's a setter and does not need a unit test.
+
+## Team Version Control ##
+I followed the **Gitflow** process throughout this project. The branches created in order were as follows:
+1. Initial Classes
+2. Rubric Features
+3. Student Grade Features
+4. Calculations Features
+
+Each *feature branch* was created in order of how the work was completed by following the project brief. After each branch was finished it was merged into main and the appropriate Gitflow processes were followed.
+
+
+
+
 
